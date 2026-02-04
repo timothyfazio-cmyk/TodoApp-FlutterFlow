@@ -1,2 +1,7 @@
-# TodoApp-FlutterFlow
-A ToDo app that was made using FlutterFlow
+# ToDo
+
+A new Flutter project.
+
+## Getting Started
+
+FlutterFlow projects are built to run on the Flutter _stable_ release.
