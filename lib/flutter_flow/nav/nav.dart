@@ -121,6 +121,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'completed')
               : CompletedWidget(),
+        ),
+        FFRoute(
+          name: QuoteWidget.routeName,
+          path: QuoteWidget.routePath,
+          builder: (context, params) =>
+              params.isEmpty ? NavBarPage(initialPage: 'quote') : QuoteWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

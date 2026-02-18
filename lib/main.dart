@@ -143,6 +143,7 @@ class _NavBarPageState extends State<NavBarPage> {
     final tabs = {
       'tasks': TasksWidget(),
       'completed': CompletedWidget(),
+      'quote': QuoteWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -176,6 +177,14 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 30.0,
             ),
             label: 'Home',
+            tooltip: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.format_quote,
+              size: 32.0,
+            ),
+            label: 'Quote',
             tooltip: '',
           )
         ],
